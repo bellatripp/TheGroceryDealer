@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Grocery Dealer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="GroceryStoreStyle.css">
+</head>
+
+<body>
+<!-- Heading image at top of page -->
+    <div class="container">
+        <img id="coverImage" src="Images1/istockphoto-1208790364-612x612.jpg" class="rounded" alt="Cover Image">
+        <div class="heading">The Grocery Dealer</div>
+    </div>    
+
+<!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: yellowgreen;">
+        <a class="navbar-brand" href="MainHomepage2.html">The Grocery Dealer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="MainHomepage2.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="MainOurStory2.html">Our Story</a>
+                    <a class="nav-item nav-link" href="MainShopPage2.html">Shop</a>
+                    <a class="nav-item nav-link" href="MainShippingPage2.html">Delivery</a>
+                    <a class="nav-item nav-link disabled" href="mailto:thegrocerydealer@gmail.com?subject=The%20Grocery%20Dealer%20Enquiries">Contact Us</a>
+            </div>
+        </div>
+
+<!-- Cart button -->
+    <div class="addToCart">
+        <a href="ShoppingCart2.html">
+        <form class="form-inline">
+            <button id="cartBtn" type="button" class="btn btn-outline-success my-2 my-sm-0" style="padding-left: 5px; margin-right: 15px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <b>Cart</b>
+                <span>0</span>
+            </button>
+        </form>
+        </a>
+    </div>
+<!-- figured out how to add cart button https://icons.getbootstrap.com/icons/cart/ and https://www.geeksforgeeks.org/how-to-create-add-to-cart-button-in-bootstrap/ -->
+</nav>
+
+<!-- Main heading  -->
+    <div>
+        <h1 id="homepageTitle">Fresh Produce Delivered Directly to Your Door</h1>
+    </div>
+
+<!-- Animated jQuery Button -->
+    <div>
+        <button class="jQueryBtn" style="cursor: pointer;">Click Me</button>
+    </div>
+
+<!-- Testimonial -->
+    <div id="testimonialBlock">
+        <p style="font-size: larger; font-weight: bold;">Testimonal</p>
+        <p>"The freshest and most delicious produce delivered straight to your door, with the friendliest customer service always ready to help and answer any question! Couldn't ask for anything more!</p>
+        <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <p style="font-style: italic;">- Customer Review</p>
+    </div>
+<!-- Got star icon from here: https://www.alt-codes.net/star_alt_code.php -->
+
+<!-- More information section -->
+    <div id="moreInformation">For more information on where we source our products click 'More' below:</div>
+    <div class="row text-center">
+        <article class="col-sm pb-5">
+            <img src="Images1/mix-fruit-flavour-500x500.png" class="homepageImgs img-thumbnail img-fluid mx-auto d-block mt-4 mb-2 rounded shadow p-3 mb-5 bg-white" alt="Our Fruits" style="height: 200px; width: 250px;"/>
+            <h2 class="articleHeadings">Our Fruits</h2>
+            <a href="#" class="btn btn-success" style="background-color: white;">More</a>
+        </article>
+        <article class="col-sm pb-5">
+            <img src="Images1/basket-vegetables-white-background-wicker-fresh-isolated-31778003.jpg" class="homepageImgs img-thumbnail img-fluid mx-auto d-block mt-4 mb-2 rounded shadow p-3 mb-5 bg-white" alt="Our Vegetables" style="height: 200px; width: 250px;"/>
+            <h2 class="articleHeadings">Our Vegetables</h2>
+            <a href="#" class="btn btn-success" style="background-color: white;">More</a>
+        </article>
+        <article class="col-sm pb-5">
+            <img src="Images1/7925374-various-dried-legumes-isolated-over-white-background.webp" class="homepageImgs img-thumbnail img-fluid mx-auto d-block mt-4 mb-2 rounded shadow p-3 mb-5 bg-white" alt="Our Legumes" style="height: 200px; width: 250px;"/>
+            <h2 class="articleHeadings">Our Legumes</h2>
+            <a href="#" class="btn btn-success" style="background-color: white;">More</a>
+        </article>
+    </div>
+<!-- I used the img-thumbnail bootstrap function for the borders -->
+
+<!-- Newsletter signup -->
+    <footer>
+        <div class="signup text-center">
+            <div id="newsletter">Subscribe To Our Newsletter</div>
+            <div class="input-group justify-content-center">
+                <input type="email" id="myEmail" placeholder="name@example.com">
+                <button class="btn btn-light-orange btn-sign" style="border: 1px darkgreen solid;">SUBSCRIBE</button>
+            </div>
+        </div>
+<!-- Figured out how to add a mailing list button at: https://stackoverflow.com/questions/50446959/how-do-i-attach-a-email-entry-to-a-button-when-using-bootstrap and https://getbootstrap.com/docs/4.0/components/forms/ -->
+
+<!-- Footer Nav Bar -->
+    <div>
+        <ul>
+            <li>
+                <p id="footerNav">Information</p>
+            </li>
+            <li>
+                <a class="active" href="MainHomepage2.html">Home</a>
+            </li>
+            <li>
+                <a href="MainOurStory2.html">Our Story</a>
+            </li>
+            <li>
+                <a href="MainShopPage2.html">Shop</a>
+            </li>
+            <li>
+            <li>
+                <a href="MainShippingPage2.html">Shipping</a>
+            </li>
+            <li>
+                <a href="mailto:thegrocerydealer@gmail.com?subject=The%20Grocery%20Dealer%20Enquiries">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="GroceryStoreJS2.js"></script>
+</body>
+</html>
+
+<!-- For the font-styles I used: none, italic, and oblique within the website. And for the differing font coloring effects I used: black, white, and green. I wasn't too sure what was meant by "colouring effects" as I couldn't really find an exact answer on google, but i just changed the colours of some of the text and made some of them bold. -->
+<!-- I used float:left for the boxes with the images in MainOurStory2.html -->
