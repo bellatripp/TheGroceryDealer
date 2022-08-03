@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Grocery Dealer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="GroceryStoreStyle.css">
+</head>
+
+<body>
+<!-- Heading at top of page -->
+    <div class="container">
+        <img id="coverImage" src="Images1/istockphoto-1208790364-612x612.jpg" class="rounded" alt="Cover Image">
+        <div class="heading">The Grocery Dealer</div>
+    </div>
+    <!-- Figured out how to place text within an image here: https://www.w3schools.com/howto/howto_css_image_text.asp -->
+
+<!-- Nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: yellowgreen;">
+        <a class="navbar-brand" href="MainHomepage2.html">The Grocery Dealer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="MainHomepage2.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="MainOurStory2.html">Our Story</a>
+                <a class="nav-item nav-link" href="MainShopPage2.html">Shop</a>
+                <a class="nav-item nav-link" href="MainShippingPage2.html">Delivery</a>
+                <a class="nav-item nav-link disabled" href="mailto:thegrocerydealer@gmail.com?subject=The%20Grocery%20Dealer%20Enquiries">Contact Us</a>
+            </div>
+        </div>
+
+<!-- Cart Button -->
+        <div class="addToCart">
+            <a href="ShoppingCart2.html" style="text-decoration: none;">
+            <form class="form-inline">
+                <button id="cartBtn" type="button" class="btn btn-outline-success my-2 my-sm-0" style="padding-left: 5px; margin-right: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <b>Cart</b>
+                    <span>0</span>
+                </button>
+            </form>
+            </a>
+        </div>
+</nav>
+<!-- Figured how to create the navbar from: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+
+<!-- In the images used in the table below, the images were formatted to be image thumbnails; formatted to be responsive; and formatted to have a rounded shadow around the image.
+In Bootstrap 4, the image thumbnail is a border surrounded by the image - https://www.geeksforgeeks.org/what-is-image-thumbnail-in-bootstrap-4/
+Responsive images automatically adjust to fit the size of the screen - https://www.w3schools.com/bootstrap/bootstrap_images.asp#:~:text=Responsive%20images%20automatically%20adjust%20to,nicely%20to%20the%20parent%20element.
+The shadow surrounds the border of the image to give an almost raised effect, making it look better in my opinion. -->
+
+<!-- Table of contents of products -->
+<div id="dropdownMenu">
+    <a class="dropdownTitle" href="#">Available Products &#8595</a>
+    <ul class="dropdownContent">
+        <div class="dropdownContentContainer">
+        <li><a href="#">Fruits</a></li>
+        <li><a href="#">Vegetables</a></li>
+        <li><a href="#">Legumes</a></li>
+        </div>
+    </ul>
+    </div>
+
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th colspan="5" id="tableHeading">Available Products</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Specialty Fruits</th>
+                <td> 
+                    <a href="DragonFruit2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/Dragon_Fruit.png" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Dragon Fruit" style="height: 150px; width: 200px;" > 
+                        <p class="fruits">Dragon Fruit</p>
+                        <p>Rich in Antioxidants</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="Mango2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/Mangos_cut_web.png" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Mango" style="height: 150px; width: 200px">
+                        <p class="fruits">Mango</p>
+                        <p>Aids in Digestion</p> 
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="Pomergranate2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/Pomegranate-b0d5e50.webp" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Pomergranate" style="height: 150px; width: 200px">
+                        <p class="fruits">Pomergranate</p>
+                        <p>Boosts Heart Health</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="Litchi2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/f-litchi-fruit-1-1280x720.jpg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Litchi" style="height: 150px; width: 200px">
+                        <p class="fruits">Litchi</p>
+                        <p>Source of Vitamin C</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                </a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Vegetables</th>
+                <td>
+                    <a href="Broccoli2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/h1218g16207258089583.jpg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Brocolli" style="height: 150px; width: 200px">
+                        <p class="vegetables">Broccoli</p>
+                        <p>Improves Liver Health</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="BabyMarrow2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/GroSpace-Baby-Marrow.jpeg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Baby Marrow" style="height: 150px; width: 200px">
+                        <p class="vegetables">Baby Marrow</p>
+                        <p>Improves Digestion</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;"> Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="Aubergine2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/aubergine.jpg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Aubergine" style="height: 150px; width: 200px">
+                        <p class="vegetables">Aubergine</p>
+                        <p>Rich in Antioxidants</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="Radish2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/red-radish2-500x500.jpg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Radish" style="height: 150px; width: 200px">
+                        <p class="vegetables">Radish</p>
+                        <p>Rich in Calcium and Potassium</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Legumes</th>
+                <td>
+                    <a href="Lentils2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/Red-lentils_2048x_89bcd488-7b13-4ba1-917a-6c451060435f.webp" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Lentils" style="height: 100px; width: 150px">
+                        <p class="legumes">Lentils</p>
+                        <p>Source of Iron and Vitamin B1</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="KidneyBeans2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/kidney-beans-red.jpg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Kidney Beans" style="height: 100px; width: 150px">
+                        <p class="legumes">Kidney Beans</p>
+                        <p>Source of Protein</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="CannelliniBeans2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/cannellini-beans.jpg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Cannellini Beans" style="height: 100px; width: 150px">
+                        <p class="legumes">Cannellini Beans</p>
+                        <p>Source of Folate</p>
+                        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                </a>
+                </td>
+                <td>
+                    <a href="Chickpeas2.html" style="color: black;">
+                    <div class="productHover">
+                        <img src="Images1/depositphotos_49364307-stock-photo-pile-of-chickpeas.jpg"  class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded-circle" alt="Chickpeas" style="height: 100px; width: 150px">
+                        <p class="legumes">Chickpeas</p>
+                        <p>Source of Fibre</p>
+                    <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Quick Add to Cart</a>
+                    </div>
+                    </a>  
+                </td>
+            </tr>
+<!-- Learnt how to make the images expand from: https://www.codegrepper.com/code-examples/whatever/how+to+make+an+image+grow+when+you+hover+css -->
+<!-- I know I made the whole div expand together instead of just the item images, however that was a stylistic choice as I prefer the look of this over just the image expanding when hovered over and the rest of the div stays static. -->
+        </tbody>
+    </table>
+
+<!-- Newsletter signup -->
+    <footer>
+        <div class="signup text-center">
+            <div id="newsletter">Subscribe To Our Newsletter</div>
+            <div class="input-group justify-content-center">
+                <input type="email" id="myEmail" placeholder="name@example.com">
+                <button class="btn btn-light-orange btn-sign" style="border: 1px darkgreen solid;">SUBSCRIBE</button>
+            </div>
+        </div>
+<!-- Figured out how to add a mailing list button at: https://stackoverflow.com/questions/50446959/how-do-i-attach-a-email-entry-to-a-button-when-using-bootstrap and https://getbootstrap.com/docs/4.0/components/forms/ -->
+
+<!-- Footer nav bar -->
+        <div>
+            <ul>
+                <li>
+                    <p id="footerNav">Information</p>
+                </li>
+                <li>
+                    <a class="active" href="MainHomepage2.html">Home</a>
+                </li>
+                <li>
+                    <a href="MainOurStory2.html">Our Story</a>
+                </li>
+                <li>
+                    <a href="MainShopPage2.html">Shop</a>
+                </li>
+                <li>
+                <li>
+                    <a href="MainShippingPage2.html">Shipping</a>
+                </li>
+                <li>
+                    <a href="mailto:thegrocerydealer@gmail.com?subject=The%20Grocery%20Dealer%20Enquiries">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+<!-- Vertical navbar gotten from: https://www.w3schools.com/css/css_navbar_vertical.asp -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="GroceryStoreJS2.js"></script>
+</body>
+</html>
