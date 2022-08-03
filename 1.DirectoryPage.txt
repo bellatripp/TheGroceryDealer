@@ -1,0 +1,23 @@
+Within "The Grocery Dealer" website: 
+"MainHomepage2.html" is the main page
+"MainOurStory2.html" is the page where 'our story' is
+"MainShopPage2.html" is the shop page where all the products are lsited, when you click on the image of the product or the title of the product, the website takes you to the individual html's of the various products
+"MainShippingPage2.html" is the delivery page where the delivery details are described
+"ShoppingCart2.html" is where the cart/checkout page is
+And when you click on the 'contact us' button you get taken to your external email.
+The JavaScript for this website is found on "GroceryStoreJS2.js"
+The CSS for this website is found on "GroceryStoreStyle.css"
+
+The order of the product pages in terms of the table is:
+1. Dragonfruit2.html
+2. Mango2.html
+3. Pomergranate2.html
+4. Litchi2.html
+5. Broccoli2.html
+6. BabyMarrow2.html
+7. Aubergine2.html
+8. Radish2.html
+9. Lentils2.html
+10. KidneyBeans2.html
+11. CannelliniBeans2.html
+12. Chickpeas2.html
