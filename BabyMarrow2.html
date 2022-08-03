@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Grocery Dealer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="GroceryStoreStyle.css">
+</head>
+
+<body>
+<!-- Heading at top of page -->
+    <div class="container">
+        <img id="coverImage" src="Images1/istockphoto-1208790364-612x612.jpg" class="rounded" alt="Cover Image">
+        <div class="heading">The Grocery Dealer</div>
+    </div>    
+
+<!-- Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: yellowgreen;">
+    <a class="navbar-brand" href="MainHomepage2.html">The Grocery Dealer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="MainHomepage2.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="MainOurStory2.html">Our Story</a>
+            <a class="nav-item nav-link" href="MainShopPage2.html">Shop</a>
+            <a class="nav-item nav-link" href="MainShippingPage2.html">Delivery</a>
+            <a class="nav-item nav-link disabled" href="mailto:thegrocerydealer@gmail.com?subject=The%20Grocery%20Dealer%20Enquiries">Contact Us</a>            </div>
+    </div>
+
+<!-- Cart button -->
+<div class="addToCart">
+    <a href="ShoppingCart2.html" style="text-decoration: none;">
+    <form class="form-inline">
+        <button id="cartBtn" type="button" class="btn btn-outline-success my-2 my-sm-0" style="padding-left: 5px; margin-right: 15px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <b>Cart</b>
+            <span>0</span>
+        </button>
+    </form>
+    </a>
+</div>
+</nav>
+
+<!-- Product card -->
+    <div class="card">
+        <p id="produceHeading">Baby Marrow</p>
+        <img src="Images1/GroSpace-Baby-Marrow.jpeg" class="img-fluid img-thumbnail shadow p-3 mb-5 bg-white rounded" alt="Baby Marrow" style="height: 500px; width: 600px;" >
+        <p class="price">R35.00 for 4</p>
+        <p>Baby marrow has been seen to improve digestion.</p>
+        <a href="#" onclick="totalAlert()" class="btnCart btn-success" style="background-color: darkgreen; float: center;">Add to Cart</a>
+    </div>
+<!-- Got how to create this product card from: https://www.w3schools.com/howto/howto_css_product_card.asp -->
+
+<!-- Newsletter signup -->
+    <footer>
+        <div class="signup text-center">
+            <div id="newsletter">Subscribe To Our Newsletter</div>
+            <div class="input-group justify-content-center">
+                <input type="email" id="myEmail" placeholder="name@example.com">
+                <button class="btn btn-light-orange btn-sign" style="border: 1px darkgreen solid;">SUBSCRIBE</button>
+            </div>
+        </div>
+<!-- Figured out how to add a mailing list button at: https://stackoverflow.com/questions/50446959/how-do-i-attach-a-email-entry-to-a-button-when-using-bootstrap and https://getbootstrap.com/docs/4.0/components/forms/ -->
+
+<!-- Footer nav bar -->
+        <div>
+            <ul>
+                <li>
+                    <p id="footerNav">Information</p>
+                </li>
+                <li>
+                    <a class="active" href="MainHomepage2.html">Home</a>
+                </li>
+                <li>
+                    <a href="MainOurStory2.html">Our Story</a>
+                </li>
+                <li>
+                    <a href="MainShopPage2.html">Shop</a>
+                </li>
+                <li>
+                <li>
+                    <a href="MainShippingPage2.html">Shipping</a>
+                </li>
+                <li>
+                    <a href="mailto:thegrocerydealer@gmail.com?subject=The%20Grocery%20Dealer%20Enquiries">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="GroceryStoreJS2.js"></script>
+    </body>
+</html>
